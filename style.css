@@ -110,6 +110,39 @@ nav>li>a>img {
 }
 
 
+
+@media(max-width:500px) {
+  nav {
+    display: flex;
+    justify-content: center;
+    height: 10%;
+    width: 100%;
+    background-color: lightgoldenrodyellow;
+  }
+
+  nav>li>a.text {
+    font-size: 15px;
+    font-family: 'Zilla Slab';
+    font-weight: bold;
+    text-decoration: none;
+    padding-top: 25px;
+    color: black;
+    margin-right: 1em;
+  }
+
+  nav>li>a>img {
+    margin-top: 0.8em;
+    margin-right: 0.2em;
+    width: 2em;
+    height: 2em;
+  }
+
+}
+
+
+
+
+
 /*profile*/
 
 .profile {
@@ -140,6 +173,16 @@ nav>li>a>img {
   width: 65%;
 }
 
+@media(max-width:500px) {
+  .profileText {
+    text-align: center;
+    font-size: 15px;
+    font-family: 'Zilla Slab', cursive;
+    order: 1;
+    width: 85%;
+  }
+}
+
 
 /*recipes section third*/
 
@@ -166,6 +209,21 @@ nav>li>a>img {
   font-size: 18px;
 }
 
+.recipe1>p>span {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.recipe2>p>span {
+  font-size: 25px;
+  font-weight: bold;
+}
+.recipe3>p>span {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+
 .recipeTables>.recipe1>img {
   width: 100%;
   height: 50%;
@@ -179,6 +237,54 @@ nav>li>a>img {
 .recipeTables>.recipe3>img {
     width: 100%;
     height: 50%;
+}
+
+@media(max-width:500px) {
+
+  .third h2 {
+    font-size: 2em;
+    font-family: 'Zilla Slab';
+    text-align: center;
+    padding: 0.5em 0;
+  }
+
+  .recipe1, .recipe2, .recipe3 {
+    width: 33%;
+    height: 400px;
+    padding: 10px;
+    text-align: center;
+    font-family: 'Zilla Slab';
+    font-size: 15px;
+  }
+
+  .recipeTables>.recipe1>img {
+    width: 80%;
+    height: 30%;
+  }
+
+  .recipeTables>.recipe2>img {
+      width: 80%;
+      height: 30%;
+  }
+
+  .recipeTables>.recipe3>img {
+      width: 80%;
+      height: 30%;
+  }
+
+  .recipe1>p>span {
+    font-size: 16px;
+    font-weight: bold;
+  }
+
+  .recipe2>p>span {
+    font-size: 16px;
+    font-weight: bold;
+  }
+  .recipe3>p>span {
+    font-size: 16px;
+    font-weight: bold;
+  }
 }
 
 /*fourth session*/
@@ -196,7 +302,7 @@ nav>li>a>img {
   display: flex;
   width: 80%;
   height: 70%;
-  
+
 }
 
 .shop1, .shop2, .shop3, .shop4 {
@@ -230,4 +336,39 @@ flex-flow: wrap;
   width: 210px;
   height: 210px;
   padding: 6px;
+}
+
+@media(max-width:500px) {
+  .shop1, .shop2, .shop3, .shop4 {
+  width: 90vw;
+  height: 80vh;
+  padding: 1px;
+  margin-top: 0;
+  display: flex;
+  flex-flow: wrap;
+  }
+
+  .bigTable>.shop1>a>img {
+    width: 70px;
+    height: 70px;
+    padding: 6px;
+  }
+
+  .bigTable>.shop2>a>img {
+    width: 70px;
+    height: 70px;
+    padding: 6px;
+  }
+
+  .bigTable>.shop3>a> img {
+    width: 70px;
+    height: 70px;
+    padding: 6px;
+  }
+
+  .bigTable>.shop4>a> img {
+    width: 70px;
+    height: 70px;
+    padding: 6px;
+  }
 }
